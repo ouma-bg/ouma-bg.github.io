@@ -30,7 +30,8 @@ const skillsContext={};vm.runInNewContext(fs.readFileSync('skills-data.js','utf8
 const badgesContext={};vm.runInNewContext(fs.readFileSync('certifications-data.js','utf8')+';this.badges=portfolioBadges;',badgesContext);if(badgesContext.badges.length!==7)throw new Error('Expected seven badges');for(const badge of badgesContext.badges){if(!fs.existsSync(badge.image))throw new Error('Missing badge image');if(!/^https:\/\/www.credly.com\/badges\/[a-f0-9-]+$/.test(badge.link))throw new Error('Invalid Credly badge link');}
 const output = path.join(__dirname,'dist');
 fs.mkdirSync(output,{recursive:true});
-for(const file of ['config.js','theme.js','index.html','home.css','home-components.js','skills.js','skills-data.js','skill-logos.js','projects-data.js','projects.js','certifications-data.js','certifications.js','experiences-data.js','experiences.js','contact.js']) fs.copyFileSync(file,path.join(output,file));
+for(const file of ['i18n.js','config.js','theme.js','index.html','home.css','home-components.js','skills.js','skills-data.js','skill-logos.js','projects-data.js','projects.js','certifications-data.js','certifications.js','experiences-data.js','experiences.js','contact.js']) fs.copyFileSync(file,path.join(output,file));
+fs.cpSync('locales',path.join(output,'locales'),{recursive:true});
 // Publish runtime assets only, not screenshots, old CVs or working documents.
 fs.mkdirSync(path.join(output,'assets'),{recursive:true});
 for(const directory of ['badges','companies','project-covers','skill-logos']) {

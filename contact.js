@@ -31,7 +31,9 @@ contactForm.addEventListener('submit', async event => {
     contactStatus.dataset.state = 'error';
     return;
   }
-  const initialLabel = contactSubmit.innerHTML;
+  // Keep a French source label: the translation layer applies the current language,
+  // including when it changes while a request is still in flight.
+  const initialLabel = 'Envoyer le message ' + (contactSubmit.querySelector?.('svg')?.outerHTML || '');
   contactSubmit.disabled = true;
   contactSubmit.textContent = 'Envoi en cours…';
   contactForm.setAttribute('aria-busy', 'true');
