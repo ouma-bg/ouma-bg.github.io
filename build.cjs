@@ -36,7 +36,7 @@ fs.mkdirSync(path.join(output,'assets'),{recursive:true});
 for(const directory of ['badges','companies','project-covers','skill-logos']) {
  fs.cpSync(path.join('assets',directory),path.join(output,'assets',directory),{recursive:true});
 }
-for(const asset of ['oumaima-haute-resolution.png','oumaima-original.png','ensa-original.png','portfolio-inter.woff2','material-design.svg','CV_Oumaima_Baghadi_Portfolio_Polyvalent.pdf']) {
+for(const asset of ['oumaima-haute-resolution.png','oumaima-original.png','ensa-original.png','portfolio-inter.woff2','material-design.svg','CV_Oumaima_Baghadi.pdf','QR_Portfolio_Oumaima_Baghadi.svg','QR_Portfolio_Oumaima_Baghadi.png']) {
  fs.copyFileSync(path.join('assets',asset),path.join(output,'assets',asset));
 }
 const configContext={};vm.runInNewContext(fs.readFileSync('config.js','utf8')+';this.config=portfolioConfig;',configContext);
