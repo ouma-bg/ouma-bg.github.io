@@ -1,0 +1,1 @@
+Les logos existants proviennent de Devicon. Logos ajoutés : pandas et firebase depuis Devicon v2.17.0 ; pydantic, n8n et googlecolab depuis Simple Icons 15.0.0. Les concepts utilisent des icônes SVG dessinées dans skills.js. Tous les assets sont servis localement.
