@@ -182,6 +182,5 @@ window.portfolioLocales.fr = {
   "Une application mobile de coordination avec géolocalisation et échanges en temps réel. L’interface utilise React Native et Expo, pour réunir ces fonctionnalités dans une expérience mobile.": "Une application mobile de coordination avec géolocalisation et échanges en temps réel. L’interface utilise React Native et Expo, pour réunir ces fonctionnalités dans une expérience mobile.",
   "Centraliser les événements de l’ENSA : consultation, inscriptions et gestion des participants. Un scanner QR valide les entrées. La plateforme associe PHP, MySQL et une interface Bootstrap.": "Centraliser les événements de l’ENSA : consultation, inscriptions et gestion des participants. Un scanner QR valide les entrées. La plateforme associe PHP, MySQL et une interface Bootstrap.",
   "Centraliser les candidatures et extraire les informations des CV avec un LLM. Le matching sémantique et le suivi des entretiens assistent les recruteurs. La plateforme associe FastAPI, React et PostgreSQL.": "Centraliser les candidatures et extraire les informations des CV avec un LLM. Le matching sémantique et le suivi des entretiens assistent les recruteurs. La plateforme associe FastAPI, React et PostgreSQL.",
-  "Choisir la langue, Français": "Choisir la langue, Français",
-  "Language / Langue": "Langue"
+  "Changer de langue": "Switch to English"
 };

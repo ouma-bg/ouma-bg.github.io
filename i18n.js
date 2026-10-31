@@ -32,8 +32,7 @@
   for(const el of elements)for(const attr of ['aria-label','aria-roledescription','placeholder','alt','title',...(el.matches('meta[name="description"]')?['content']:[])])if(el.hasAttribute(attr))bind(el,attr,el.getAttribute(attr),value=>el.setAttribute(attr,value));
   document.documentElement.lang=language;
   document.querySelectorAll('.language-code').forEach(el=>{if(el.textContent!==language.toUpperCase())el.textContent=language.toUpperCase();});
-  document.querySelectorAll('.language-toggle').forEach(el=>{const label=translate('Choisir la langue, Français');if(el.getAttribute('aria-label')!==label)el.setAttribute('aria-label',label);});
-  document.querySelectorAll('[data-language]').forEach(el=>el.setAttribute('aria-checked',String(el.dataset.language===language)));
+  document.querySelectorAll('.language-toggle').forEach(el=>{const label=translate('Changer de langue');if(el.getAttribute('aria-label')!==label)el.setAttribute('aria-label',label);});
  }
  function setLanguage(value){
   if(!['fr','en'].includes(value))return;

@@ -80,7 +80,7 @@ window.portfolioLocales.en = {
   "Envoyer le message": "Send message",
   "Conçu avec soin.": "Crafted with care.",
   "Vous pouvez écrire directement à": "You can email me directly at",
-  "Télécharger CV": "Download CV (French)",
+  "Télécharger CV": "Download CV",
   "Envoyer un e-mail": "Send an email",
   "Activer le mode clair": "Switch to light mode",
   "Activer le mode sombre": "Switch to dark mode",
@@ -182,6 +182,5 @@ window.portfolioLocales.en = {
   "Une application mobile de coordination avec géolocalisation et échanges en temps réel. L’interface utilise React Native et Expo, pour réunir ces fonctionnalités dans une expérience mobile.": "A mobile coordination application with geolocation and real-time communication. Its interface uses React Native and Expo to bring these features together in a mobile experience.",
   "Centraliser les événements de l’ENSA : consultation, inscriptions et gestion des participants. Un scanner QR valide les entrées. La plateforme associe PHP, MySQL et une interface Bootstrap.": "Centralise ENSA events: browsing, registration and participant management. A QR scanner validates entry. The platform combines PHP, MySQL and a Bootstrap interface.",
   "Centraliser les candidatures et extraire les informations des CV avec un LLM. Le matching sémantique et le suivi des entretiens assistent les recruteurs. La plateforme associe FastAPI, React et PostgreSQL.": "Centralise applications and extract CV information using an LLM. Semantic matching and interview tracking assist recruiters. The platform combines FastAPI, React and PostgreSQL.",
-  "Choisir la langue, Français": "Choose language, English",
-  "Language / Langue": "Language"
+  "Changer de langue": "Passer en français"
 };

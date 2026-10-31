@@ -30,7 +30,9 @@ test('dynamic counts, levels, dates and accessible project labels translate',()=
  assert.equal(t('orchestration agentique — Niveau : Avancé'),'Agentic orchestration — Level: Advanced');
  assert.equal(t('30 septembre 2026'),'September 30, 2026');
  assert.equal(t('Afficher Détection de pneumonie'),'Show Pneumonia detection');
- assert.equal(t('Télécharger CV'),'Download CV (French)');
+ assert.equal(t('Télécharger CV'),'Download CV');
  assert.equal(t('Ce champ est requis.'),'This field is required.');
  assert.equal(t('Python'),'Python');
+ assert.equal(t('Changer de langue','fr'),'Switch to English');
+ assert.equal(t('Changer de langue','en'),'Passer en français');
 });
